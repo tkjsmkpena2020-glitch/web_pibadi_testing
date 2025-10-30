@@ -1,0 +1,242 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri 10 Hardware Gaming</title>
+    <style>
+        /* ====== STYLE DASAR ====== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background: linear-gradient(135deg, #1e272e, #2f3640, #353b48);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* ====== HEADER ====== */
+header {
+    text-align: center;
+    padding: 20px 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    /* background image transparan + gradasi */
+    background: 
+        linear-gradient(rgba(0, 151, 230, 0.6), rgba(0, 151, 230, 0.6)),
+        url('https://images.unsplash.com/photo-1605902711622-cfb43c4437f0?auto=format&fit=crop&w=1500&q=80');
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        /* ====== GRID CONTAINER ====== */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            padding: 40px 30px;
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        /* ====== CARD ====== */
+        .card {
+            background: #2f3640;
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+            overflow: hidden;
+            transform: translateY(30px);
+            opacity: 0;
+            transition: all 0.8s ease;
+        }
+
+        .card.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.08);
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h2 {
+            font-size: 20px;
+            color: #00a8ff;
+            margin-bottom: 10px;
+        }
+
+        .card-content p {
+            font-size: 14px;
+            color: #dcdde1;
+            line-height: 1.6;
+        }
+
+        /* ====== FOOTER ====== */
+        footer {
+            background: #192a56;
+            text-align: center;
+            padding: 20px;
+            color: #f5f6fa;
+            font-size: 14px;
+            margin-top: 30px;
+            letter-spacing: 0.5px;
+        }
+
+        footer span {
+            color: #00a8ff;
+            font-weight: 600;
+        }
+
+        /* ====== ANIMASI SCROLL ====== */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Galeri 10 Hardware Gaming</h1>
+    <p>Kumpulan artikel hardware gaming modern dengan gambar dan deskripsi singkat</p>
+</header>
+
+<div class="container">
+    <div class="card">
+        <img src="https://img.lazcdn.com/g/p/86291e7fd8195b5b18f224ef4c903953.jpg_720x720q80.jpg" alt="Mouse">
+        <div class="card-content">
+            <h2>Mouse Gaming</h2>
+            <p>Logitech G menghadirkan mouse gaming dengan sensor presisi tinggi, desain ergonomis, dan teknologi wireless canggih.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://els.id/wp-content/uploads/2025/01/Gamen-Titan-7-KB.png" alt="Keyboard">
+        <div class="card-content">
+            <h2>Keyboard Gaming</h2>
+            <p>Keyboard mekanikal responsif dengan RGB dan daya tahan tinggi, dirancang untuk performa gaming maksimal.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://els.id/wp-content/uploads/2024/05/LED-34-34-G34WQi.png" alt="Monitor">
+        <div class="card-content">
+            <h2>Monitor Gaming</h2>
+            <p>Monitor ultra-lebar dengan refresh rate 165Hz dan dukungan G-SYNC menghadirkan visual yang super halus.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://els.id/wp-content/uploads/2024/03/Gamen-GS2-Speaker.png" alt="Speaker">
+        <div class="card-content">
+            <h2>Speaker Gaming</h2>
+            <p>Suara jernih dengan bass bertenaga untuk pengalaman audio sinematik di setiap permainan.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://www.ukgamingcomputers.co.uk/media/catalog/product/cache/e4debf30cbf8fc48eea0edc9ed6f98d7/e/l/eliminator24main1.jpg" alt="PC Gaming">
+        <div class="card-content">
+            <h2>PC Gaming</h2>
+            <p>Performa tinggi dengan prosesor terbaru, GPU tangguh, dan sistem pendingin efisien untuk gaming berat.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://jete.id/wp-content/uploads/2023/05/mock-up-ga5-4.jpg" alt="Headset">
+        <div class="card-content">
+            <h2>Headset Gaming</h2>
+            <p>Audio surround dan mikrofon noise-canceling untuk komunikasi yang jelas dan imersif saat bermain.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://row.hyperx.com/cdn/shop/products/hyperx_solocast_01_main.jpg?v=1662449693&width=1920" alt="Microphone">
+        <div class="card-content">
+            <h2>Microphone Gaming</h2>
+            <p>Mic USB profesional dengan pencahayaan RGB, cocok untuk streaming dan podcast berkualitas tinggi.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://i.pcmag.com/imagery/reviews/066JaVXcTjMYxKiWFInqP95-1.fit_lim.size_919x518.v1656596840.png" alt="WiFi">
+        <div class="card-content">
+            <h2>WiFi Gaming</h2>
+            <p>Koneksi WiFi low-latency dengan teknologi MU-MIMO untuk stabilitas tinggi saat bermain game online.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//93/MTA-4375028/rexus_rexus_gladius_gx2_pro_stick_gaming_controller_gamepad_joystick_-usb_pc-_full04_dcgw41b8.jpg" alt="Joystick">
+        <div class="card-content">
+            <h2>Joystick Gaming</h2>
+            <p>Kontroler ergonomis dengan getaran realistis dan koneksi USB plug-and-play untuk pengalaman maksimal.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://img.id.my-best.com/product_images/e40d724803a6bacf43de86e87b0be8fd.jpg?ixlib=rails-4.3.1&q=70&lossless=0&w=800&h=800&fit=clip&s=f60026b146a98ea355be1ca43ccdcb30" alt="Meja">
+        <div class="card-content">
+            <h2>Meja Gaming</h2>
+            <p>Meja ergonomis dengan LED RGB dan desain kokoh untuk meningkatkan kenyamanan dan tampilan setup gaming-mu.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2025 Galeri Hardware | Dibuat oleh <span>TKJ SMKN PENA</span></p>
+</footer>
+
+<!-- ====== SCRIPT ANIMASI SCROLL ====== -->
+<script>
+    const cards = document.querySelectorAll('.card');
+    const showOnScroll = () => {
+        const trigger = window.innerHeight * 0.85;
+        cards.forEach(card => {
+            const top = card.getBoundingClientRect().top;
+            if (top < trigger) card.classList.add('show');
+        });
+    };
+    window.addEventListener('scroll', showOnScroll);
+    window.addEventListener('load', showOnScroll);
+</script>
+
+</body>
+</html>
